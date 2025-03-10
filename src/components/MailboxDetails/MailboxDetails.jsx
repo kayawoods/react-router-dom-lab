@@ -1,25 +1,27 @@
-import { useParams } from "react-router"
+
+import { useParams } from "react-router";
 
 const MailboxDetails = (props) => {
-const { mailboxId } =useParams() 
-
-
+   
+    const { mailboxId } = useParams();
 const selectedBox = props.mailboxes.find((mailbox) => (
-    mailbox._id === Number(mailboxId)
- ));
- return (
+   mailbox._id === Number(mailboxId)
+));
+
+return (
     <>
-      <h2>{selectedBox.boxSize}</h2>
-      <dl>
-        <dt>boxsize:</dt>
-        <dd>{selectedBox.boxSize}</dd>
-        <dt>boxowner:</dt>
-        <dd>{selectedBox.boxOwner}</dd>
+      <h2>Box Details</h2>
+      <dl className="left-align">
+        <dt>Box Holder:</dt>
+        <dd>{ selectedBox.boxOwner } </dd>
+        <dt>Box size:</dt>
+        <dd>{ selectedBox.boxSize }</dd>
       </dl>
     </>
   );
-
 };
+
+
 
 
 

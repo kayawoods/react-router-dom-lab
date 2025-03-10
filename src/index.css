@@ -114,3 +114,6 @@ textarea {
 button {
   background-color: #535bf2;
 }
+.left-align {
+  text-align: left;
+}
