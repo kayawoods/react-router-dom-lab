@@ -48,7 +48,7 @@ return (
     <Route path="/new-mailbox" element={<MailboxForm addBox={addBox}/>} />
     <Route path="/mailboxes/:mailboxId" element={<MailboxDetails mailboxes={mailboxes} />}
       />
-    <Route path="*" element={<h2>Whoops, nothing here!</h2>} />
+    <Route path="*" element={<h2>Whoops, nothing here</h2>} />
     </Routes>
   </>
 );
